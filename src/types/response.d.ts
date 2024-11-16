@@ -5,7 +5,8 @@ export type CountResponse = {
 export type MonthlyStatsResponse = {
   categories: string[];
   series: number[];
-};
+  percentDiff: number;
+} & CountResponse;
 
 export type GetAllStats = {
   projects: MonthlyStatsResponse;
